@@ -35,10 +35,10 @@ class _LoginPageState extends State<LoginPage> {
                 Positioned(
                     top: -80,
                     left: -100,
-                    child: _circleLogin()
+                    child: _rectangleLogin()
                 ),
                 Positioned(
-                    top: 60,
+                    top: 50,
                     left: 25,
                     child: _textLogin()
                 ),
@@ -48,6 +48,7 @@ class _LoginPageState extends State<LoginPage> {
                         //_imageBanner(),
                         _lottieAnimation(),
                         _textKleidung(),
+                        SizedBox(height: 50),
                         _textFieldEmail(),
                         _textFieldPassword(),
                         _buttonLogin(),
@@ -61,13 +62,13 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 
-  Widget _circleLogin()
+  Widget _rectangleLogin()
   {
     return Container(
-        width: 500,
-        height: 230,
+        width: 400,
+        height: 200,
         decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(100),
+            borderRadius: BorderRadius.circular(50),
             color: colors_app.principalColor
         )
     );
@@ -80,8 +81,8 @@ class _LoginPageState extends State<LoginPage> {
       style: TextStyle(
           color: Colors.white,
           fontWeight: FontWeight.bold,
-          fontSize: 22,
-          fontFamily: 'OneDay'
+          fontSize: 30,
+          fontFamily: 'NimbusSans'
       ),
     );
   }
@@ -107,9 +108,9 @@ class _LoginPageState extends State<LoginPage> {
     return Text(
       'KLEIDUNG FASHION',
       style: TextStyle(
-          color: Colors.white,
+          color: colors_app.principalColor,
           fontWeight: FontWeight.bold,
-          fontSize: 25,
+          fontSize: 30,
           fontFamily: 'OneDay'
       ),
     );

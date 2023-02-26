@@ -31,6 +31,7 @@ dependencies:
   flutter:
     sdk: flutter
   lottie: ^2.2.0
+  flutter_holo_date_picker: ^1.1.0
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -93,5 +94,9 @@ flutter:
     - family: OneDay
       fonts:
         - asset: assets/fonts/OneDay/ONEDAY.ttf
+
+    - family: NimbusSans
+      fonts:
+        - asset: assets/fonts/NimbusSans/NimbusSanL-Bol.otf
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

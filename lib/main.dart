@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kleidung_app/src/login/login_page.dart';
+import 'package:kleidung_app/src/register/register_page.dart';
 import 'package:kleidung_app/src/utils/colors_app.dart';
 
 void main() {
@@ -21,7 +22,8 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       initialRoute: 'login',
       routes: {
-        'login': (BuildContext context) => LoginPage()
+        'login': (BuildContext context) => LoginPage(),
+        'register': (BuildContext context) => RegisterPage()
       },
       theme: ThemeData(
         scaffoldBackgroundColor: colors_app.backgroundColor
