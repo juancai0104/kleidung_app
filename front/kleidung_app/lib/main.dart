@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:kleidung_app/src/login/login_page.dart';
-import 'package:kleidung_app/src/register/register_page.dart';
+import 'package:kleidung_app/src/pages/client/products/list/client_products_list_page.dart';
+import 'package:kleidung_app/src/pages/login/login_page.dart';
+import 'package:kleidung_app/src/pages/register/register_page.dart';
 import 'package:kleidung_app/src/utils/colors_app.dart';
 
 void main() {
@@ -23,7 +24,8 @@ class _MyAppState extends State<MyApp> {
       initialRoute: 'login',
       routes: {
         'login': (BuildContext context) => LoginPage(),
-        'register': (BuildContext context) => RegisterPage()
+        'register': (BuildContext context) => RegisterPage(),
+        'client/products/list': (BuildContext context) => ClientProductsListPage()
       },
       theme: ThemeData(
         scaffoldBackgroundColor: colors_app.backgroundColor

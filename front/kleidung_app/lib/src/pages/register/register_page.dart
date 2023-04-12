@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_holo_date_picker/flutter_holo_date_picker.dart';
-import 'package:kleidung_app/src/register/register_controller.dart';
+import 'package:kleidung_app/src/pages/register/register_controller.dart';
 import 'package:kleidung_app/src/utils/colors_app.dart';
 
 class RegisterPage extends StatefulWidget {
@@ -178,6 +178,7 @@ class _RegisterPageState extends State<RegisterPage> {
       ),
       child: TextField(
           controller: _con.birthDateController,
+          keyboardType: TextInputType.datetime,
           decoration: InputDecoration(
               hintText: 'Fecha de nacimiento. Ej. 01/01/2000',
               border: InputBorder.none,
