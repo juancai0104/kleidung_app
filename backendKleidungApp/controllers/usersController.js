@@ -68,8 +68,10 @@ module.exports = {
                     id: myUser.id,
                     name: myUser.name,
                     lastname: myUser.lastname,
-                    email: myUser.email,
+                    birthdate: myUser.birthdate,
                     phone: myUser.phone,
+                    homeAddress: myUser.homeAddress,
+                    email: myUser.email,
                     image: myUser.image,
                     session_token: `JWT ${token}`,
                     roles: myUser.roles

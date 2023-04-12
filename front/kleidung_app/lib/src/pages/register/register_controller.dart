@@ -62,7 +62,9 @@ class RegisterController
         email: email,
         name: name,
         lastname: lastName,
+        birthdate: DateTime.parse(birthdate),
         phone: phoneNumber,
+        homeAddress: address,
         password: password
     );
 
